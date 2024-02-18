@@ -60,7 +60,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-gem 'sqlite3', '~> 1.4'
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
@@ -74,9 +74,9 @@ gem 'bcrypt', '~>3.1','>=3.1.5'
 gem 'jquery-rails'
 
 gem "sassc-rails"
-
+gem 'pg'
 group :production do 
-  gem 'pg'
+  
   
   gem 'rails_12factor'
 end
