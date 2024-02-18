@@ -75,6 +75,8 @@ gem 'jquery-rails'
 
 gem "sassc-rails"
 
+gem "action-cable-redis-backport"
+
 #gem "sqlite3", "~> 1.4"
 
 group :production do 
