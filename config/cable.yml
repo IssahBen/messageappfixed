@@ -6,6 +6,6 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_PROVIDER") %>
+  url: <%= ENV.fetch("HEROKU_REDIS_BLACK_URL") %>
   channel_prefix: app4_production
    
