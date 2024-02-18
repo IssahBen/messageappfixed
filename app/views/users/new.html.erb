@@ -1,0 +1,42 @@
+<div class="ui inverted small">
+  
+ 
+
+    <div class="row justify-content-center">
+            <div class="col-10"> 
+           
+               <%= render 'shared/errors', object: @user %>
+                
+                <%= form_with model: @user, url: signup_path,class:"shadow p-3 mb-5 bg-white rounded",local: true do |form| %>
+
+                <div class= "field">
+
+                    <%=form.label :username,class: "col-2 col-form-label text-dark " %>
+                    <div class= "col-10">
+                        <%= form.text_field :username,class: "form-control rounded",placeholder: "Enter username" %>
+                    </div>
+                </div>
+                    
+               
+                   <div class="field">
+                    <%= form.label :password,class: "col-2 col-form-label text-dark" %>
+
+                    <div class= "col-10">
+
+
+                        <%= form.password_field :password , class: "form-control rounded" ,placeholder:"choose a password" %>
+
+                    </div>
+                </div>
+                   
+                <div class= "ui submit button ">   
+                    <%= form.submit 'Signup' ,class: "" %>
+                </div>
+
+                <% end %>
+            </div>
+
+           
+    </div>
+
+</div>

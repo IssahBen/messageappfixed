@@ -1,0 +1,29 @@
+@import 'semantic-ui';
+
+.chatbox {
+    height: 450px;
+
+
+}
+
+#messages {
+    overflow: scroll;
+    height: 15em;
+}
+
+#btn {
+
+
+    width: 50%;
+}
+
+#sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input button {
+
+    display: none;
+}

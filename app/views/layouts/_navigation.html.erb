@@ -1,0 +1,27 @@
+ <a class=" item" href="<%= root_path%>">
+        Chatroom
+      </a>
+      <a class="item">
+        Messages
+      </a>
+      <div class="right menu">
+            <div class="ui simple dropdown item">
+                Account <i class="dropdown icon"></i>
+                <div class="menu">
+                <% if logged_in? %>
+                    <%= form_with url: logout_path,class: "item", method: :delete do |form| %>
+                    <%= form.submit "Sign out" %>
+                    <% end %>  
+                    
+                <% else %>
+                    <a class="item" href="<%= login_path%>">log in</a>
+                
+                <% end%>
+                </div>
+            </div>
+            <% if !logged_in? %>
+                <div class="item">
+                    <%= link_to "Log in" , login_path, class: "ui primary button" %>
+                </div>
+            <% end %>
+      </div>
