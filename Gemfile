@@ -75,7 +75,7 @@ gem 'jquery-rails'
 
 gem "sassc-rails"
 
-gem "sqlite3", "~> 1.4"
+#gem "sqlite3", "~> 1.4"
 
 group :production do 
   gem 'pg'
