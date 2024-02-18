@@ -74,7 +74,9 @@ gem 'bcrypt', '~>3.1','>=3.1.5'
 gem 'jquery-rails'
 
 gem "sassc-rails"
-gem "sqlite3"
+
+gem "sqlite3", "~> 1.4"
+
 group :production do 
   gem 'pg'
   
