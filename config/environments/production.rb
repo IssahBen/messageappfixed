@@ -96,4 +96,5 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
   config.web_socket_url = "wss://shrouded-depths-23189.herokuapp.com/cable"
   config.action_cable.allowed_request_origins = ['https://shrouded-depthd-23189.herokuapp.com', 'http://shrouded-depthd-23189.herokuapp.com']
+  config.action_mailer.default_url_options = ( "https://shrouded-depthd-23189.herokuapp.com")
 end
