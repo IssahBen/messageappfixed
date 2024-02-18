@@ -1,0 +1,1 @@
+$redis = Redis.new(url: ENV[" redis://:pcade59066a193168b54132ce927691b95898b03dd5b0f1db09f9c6bf3b48671b@ec2-34-206-166-87.compute-1.amazonaws.com:8399"]) if Rails.env.production?
